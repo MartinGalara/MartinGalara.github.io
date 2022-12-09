@@ -26,6 +26,7 @@ body {
 
 .brand{
     margin-top: -7px;
+    font-size: 25px;
 }
 
 .brand span{
@@ -40,12 +41,14 @@ color: aqua;
 
 .menu li{
     list-style: none;
+    font-size: 20px;
 }
 
 .menu a{
     color:#fff;
     text-decoration: none;
     padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .menu .active{  
@@ -54,6 +57,7 @@ color: aqua;
 
 .menu a:hover{
     background-color: aqua;
+    border-radius: 10px;
     color:#191c32;
     transition: ease-in .4s;
 }
@@ -70,6 +74,10 @@ color: aqua;
 
 h1{
     font-size: 2.2em;
+}
+
+.main h4{
+    padding-top: 20px;
 }
 
 span{
@@ -92,10 +100,14 @@ span{
     box-shadow: none;
 }
 
+.bottom_text{
+    padding-bottom: 20px;
+}
+
 .main img{
-    width: 350px;
+    width: 450px;
     border: 7px solid aqua;
-    height: 520px;
+    height: 700px;
     z-index: 1;
 }
 
@@ -133,6 +145,22 @@ span{
     margin-bottom: 1em;
 }
 
+.read-more{
+    padding: 10px 20px;
+    background-color: aqua;
+    border:none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+}
+
+.read-more:hover{
+    background-color: #191c32;
+    box-shadow: none;
+    color: #fff;
+}   
+
 .portfolio{
     width: 100vw;
     background-color: #191c32;
@@ -164,15 +192,30 @@ span{
     margin: 1em;
 }
 
-.card__img{
+.card__img1{
     width: 100%;
     height: 150px;
-    background-image: url(../images/PROYECTO.png);
+    background-image: url(../images/VIDEOGAMES.png);
+    background-size: cover;
+}
+
+.card__img2{
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/APPGYMFRONT.png);
+    background-size: cover;
+}
+
+.card__img3{
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/APPGYMBACK.png);
     background-size: cover;
 }
 
 .card__title{
     padding: 20px;
+    text-align: center;
 }
 
 .card__project-links{
@@ -208,13 +251,27 @@ span{
     margin-top:1em;
 }
 
+.contact-section{
+    width: 100vw;
+    background-color: #191c32;
+    color:#fff;
+}
+
+.contact-headings{
+    width: 100vw;
+    padding: 5em;
+}
+
 .contact-headings h2{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .container-contact{
     padding: 3em;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .container-contact img{
@@ -272,6 +329,12 @@ span{
     background-color: aqua;
 }
 
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-content h2{
     font-size: 3em;
 }
@@ -286,4 +349,9 @@ span{
     justify-content: space-evenly;
     width: 300px;
     margin-top: 1em;
+}
+
+.social-network a{
+    color:black;
+    text-decoration: none;
 }
