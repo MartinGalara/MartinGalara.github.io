@@ -18,12 +18,13 @@
       </div>
       <ul class="menu">
         <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about_me">About me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
   <main class="main">
     <div class="info-content">
       <h1>I'm <span>Martín</span> Galará</h1>
@@ -40,6 +41,8 @@
   </main>
 </div>
 
+
+<section id="about_me">
 <div class="about">
   <img src="./images/about.png" alt="Imagen about">
   <div class="about-info">
@@ -51,7 +54,9 @@
     <a href="https://www.linkedin.com/in/martingalara/" target="_blank"><button class="read-more">Read more</button></a>
   </div>
 </div>
+</section>
 
+<section id="portfolio">
 <div class="portfolio">
   <div class="portfolio-headings">
     <h2>My Portfolio</h2>
@@ -126,7 +131,9 @@
 
   </div>
 </div>
+</section>
 
+<section id="contact">
 <div class="contact-section">
   <div class="contact-headings">
     <h2>Keep in touch</h2>
@@ -135,17 +142,21 @@
   <div class="container-contact">
     <div class="contact-form">
       <h4>Send me a message...</h4>
-      <form class="form">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Type your message here..."></textarea>
-        <button class="btn-submit">
+      <form class="form" action="https://formsubmit.co/mgalara@gmail.com" method="post">
+        <input type="hidden" name="_subject" vale="New Email!">
+        <input type="text" name="Name" placeholder="Name">
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/portfolio.html">
+        <input type="hidden" name="_captcha" value="false">
+        <textarea type="text" name="Text "placeholder="Type your message here..."></textarea>
+        <button class="btn-submit" value="Send">
           Send message
         </button>
       </form>
     </div>
   </div>
 </div>
+</section>
 
 <footer class="footer">
   <div class="footer-content">
