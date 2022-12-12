@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
   <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
  </head>
 <body>
 
@@ -16,12 +16,16 @@
       <div class="brand">
         <h2>M<span>G</span></h2>
       </div>
-      <ul class="menu">
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#about_me">About me</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul class="menu" id="menu">
+        <li><a id="home_navbar" class="active" href="#">Home</a></li>
+        <li><a id="about_me_navbar" href="#about_me">About me</a></li>
+        <li><a id="portfolio_navbar" href="#portfolio">Portfolio</a></li>
+        <li><a id="contact_navbar" href="#contact">Contact</a></li>
       </ul>
+      <div class="toggle-menu">
+        <i class="fas fa-bars" id="toggle_open"></i>
+        <i class="fas fa-close" id="toggle_close"></i>
+      </div>
     </nav>
   </header>
   
@@ -29,6 +33,11 @@
     <div class="info-content">
       <h1>I'm <span>Martín</span> Galará</h1>
       <h3>Full Stack Developer</h3>
+      <div class="sotial-networks">
+        <a href="https://www.linkedin.com/in/martingalara/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/martingalara/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/martin.galara" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
       <h4>Tech Skills:</h4>
       <p>JavaScript | React | Redux | Node.js | Sequelize.js | Express.js | PostgreSQL | SQL | HTML | CSS | SCRUM</p>
       <h4>Soft Skills:</h4>
@@ -37,7 +46,7 @@
         <button class="download-cv">Download CV</button>
       </a>
     </div>
-    <img src="./images/PROFILE PIC.png" alt="Profile pic"/>
+    <img src="./images/PROFILE PIC FINAL.png" alt="Profile pic"/>
   </main>
 </div>
 
@@ -169,6 +178,7 @@
     <a href="https://www.facebook.com/martin.galara" target="_blank"><i class="fab fa-facebook"></i></a>
   </div>
 </footer>
+<script src="/portfolio.js"></script>
 
 </body>
 </html>

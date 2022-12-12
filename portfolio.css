@@ -51,10 +51,6 @@ color: aqua;
     border-radius: 10px;
 }
 
-.menu .active{  
-    color:aqua;
-}
-
 .menu a:hover{
     background-color: aqua;
     border-radius: 10px;
@@ -62,19 +58,33 @@ color: aqua;
     transition: ease-in .4s;
 }
 
+.menu .active{  
+    color:aqua;
+}
+
+.toggle-menu,
+.info-content .sotial-networks {
+  display: none;
+}
+
 .main{
     margin: 0 auto;
     width: 80vw;
     height: 80vh;
-    display:grid;
+    display: flex;
+    justify-content: space-evenly;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 2em;
 }
 
 h1{
-    font-size: 2.2em;
+    font-size: clamp(4vw, 1.5em, 3em);
 }
+
+.info-content h3 {
+    color: aqua;
+  }
 
 .main h4{
     padding-top: 20px;
@@ -88,11 +98,13 @@ span{
 .project-details-button{
     padding: 10px 20px;
     background-color: aqua;
-    border:none;
+    border: none;
     border-radius: 20px;
     margin-top: 10px;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69);
+    -webkit-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    -moz-box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
 }
 
 .download-cv:hover{
@@ -106,9 +118,11 @@ span{
 
 .main img{
     width: 475px;
-    border: 7px solid aqua;
+    border: 7px solid rgba(0, 255, 255, 0.704);
     height: 637px;
-    z-index: 1;
+    min-height: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .about{
@@ -161,7 +175,8 @@ span{
     color: #fff;
 }   
 
-.portfolio{
+.portfolio,
+.contact-section{
     width: 100vw;
     background-color: #191c32;
     color:#fff
@@ -169,7 +184,11 @@ span{
 
 .portfolio-headings{
     width: 100vw;
-    padding: 5em;
+    padding-top: 5em;
+    padding-left: 5em;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .portfolio-headings h2{
@@ -178,10 +197,11 @@ span{
 
 .portfolio .container{
     width: 80vw;
-    height: 80vh;
     margin:0 auto;
     display:flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -251,15 +271,10 @@ span{
     margin-top:1em;
 }
 
-.contact-section{
-    width: 100vw;
-    background-color: #191c32;
-    color:#fff;
-}
-
 .contact-headings{
     width: 100vw;
-    padding: 5em;
+    padding-top: 5em;
+    padding-left: 5em;
 }
 
 .contact-headings h2{
@@ -326,7 +341,7 @@ span{
     align-items: center;
     width: 100vw;
     height: 200px;
-    background-color: aqua;
+    background-color: rgba(0, 255, 255, 0.704);
 }
 
 .footer-content{
@@ -340,18 +355,107 @@ span{
 }
 
 .footer-content h5,
-.social-network{
+.social-network,
+.sotial-networks{
     font-size: 1.5em;
 }
 
-.social-network{
+.social-network,
+.sotial-networks{
     display:flex;
     justify-content: space-evenly;
     width: 300px;
     margin-top: 1em;
 }
 
+.sotial-networks{
+    margin-bottom: 10px;
+}
+
 .social-network a{
     color:black;
     text-decoration: none;
 }
+
+.sotial-networks a{
+    color:white;
+}
+
+@media screen and (max-width: 800px) {
+
+    .menu {
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      background-color: #2b3058;
+      z-index: 1;
+      transform: translateX(-110%);
+      transition: all .5s ease-in-out;
+    }
+  
+    .show-menu {
+      transform: translateX(0%);
+      transition: all .5s ease-in-out;
+    }
+  
+    .menu li {
+      margin: 2em;
+    }
+  
+    .toggle-menu {
+      display: block;
+    }
+  
+    .fa-bars {
+      font-size: 1.5em;
+      margin-top: -.2em;
+    }
+  
+    .toggle-menu .fa-close {
+      font-size: 1.7em;
+      display: none;
+    }
+  
+    .main,
+    .about {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  
+    .main img {
+      width: min(70%, 350px);
+      height: auto;
+    }
+  
+    .info-content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-content .sotial-networks
+    {
+      display: block;
+    }
+  
+    .info-content .sotial-networks {
+      display: flex;
+      justify-content: space-evenly;
+  
+    }
+  
+    .info-content h4,
+    .info-content p{
+      display: none;
+    }
+  
+    .form {
+      width: 80vw;
+  
+    }
+  
+  }
