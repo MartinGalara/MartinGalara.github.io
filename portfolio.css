@@ -30,7 +30,7 @@ body {
 }
 
 .brand span{
-color: aqua;
+color: #42dbdb;
 }
 
 .menu{
@@ -52,14 +52,14 @@ color: aqua;
 }
 
 .menu a:hover{
-    background-color: aqua;
+    background-color: #42dbdb;
     border-radius: 10px;
     color:#191c32;
     transition: ease-in .4s;
 }
 
 .menu .active{  
-    color:aqua;
+    color:#42dbdb;
 }
 
 .toggle-menu,
@@ -83,7 +83,7 @@ h1{
 }
 
 .info-content h3 {
-    color: aqua;
+    color: #42dbdb;
   }
 
 .main h4{
@@ -91,13 +91,13 @@ h1{
 }
 
 span{
-    color:aqua;
+    color:#42dbdb;
 }
 
 .download-cv,
 .project-details-button{
     padding: 10px 20px;
-    background-color: aqua;
+    background-color: #42dbdb;
     border: none;
     border-radius: 20px;
     margin-top: 10px;
@@ -118,7 +118,7 @@ span{
 
 .main img{
     width: 475px;
-    border: 7px solid rgba(0, 255, 255, 0.704);
+    border: 7px solid #42dbdb;
     height: 637px;
     min-height: 300px;
     padding-left: 10px;
@@ -150,7 +150,7 @@ span{
 .divider{
     height: 4px;
     width: 60px;
-    background-color:aqua;
+    background-color:#42dbdb;
     margin-top: 5px;
     margin-bottom: 2em;
 }
@@ -161,7 +161,7 @@ span{
 
 .read-more{
     padding: 10px 20px;
-    background-color: aqua;
+    background-color: #42dbdb;
     border:none;
     border-radius: 20px;
     margin-top: 10px;
@@ -323,7 +323,7 @@ span{
     margin: 1em;
     border: none;
     text-transform: uppercase;
-    background-color: aqua;
+    background-color: #42dbdb;
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
