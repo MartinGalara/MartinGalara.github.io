@@ -1,179 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
-  <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
- </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="navbar">
+          <div class="brand">
+            <h2>M<span>G</span></h2>
+          </div>
+          <ul class="menu" id="menu">
+            <li><a id="home_navbar" class="active" href="#">Home</a></li>
+            <li><a id="about_me_navbar" href="#about_me">About me</a></li>
+            <li><a id="portfolio_navbar" href="#portfolio">Portfolio</a></li>
+            <li><a id="contact_navbar" href="#contact">Contact</a></li>
+          </ul>
+          <div class="toggle-menu">
+            <i class="fas fa-bars" id="toggle_open"></i>
+            <i class="fas fa-close" id="toggle_close"></i>
+          </div>
+        </nav>
+      </header>
 
-<div class="wrapper">
-  <header>
-    <nav class="navbar">
-      <div class="brand">
-        <h2>M<span>G</span></h2>
+      <main class="main">
+        <div class="info-content">
+          <h1>I'm <span>Martín</span> Galará</h1>
+          <h3>Full Stack Developer</h3>
+          <div class="sotial-networks">
+            <a href="https://www.linkedin.com/in/martingalara/" target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/MartinGalara" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <h4>Tech Skills:</h4>
+          <p>
+            JavaScript | React | Redux | Node.js | Sequelize.js | Express.js | PostgreSQL | SQL |
+            HTML | CSS | SCRUM | Sequelize | Angular | Java 21 | AWS SDK | Spring boot | Maven |
+            DynamoDB | Lambda functions
+          </p>
+          <h4>Soft Skills:</h4>
+          <p class="bottom_text">
+            Teamwork | Troubleshooting | Fast Learning | Communication Skills | Leadership Skills |
+            Resilience
+          </p>
+          <a href="/files/CV MARTIN GALARA ( English ).pdf" download>
+            <button class="download-cv">Download CV</button>
+          </a>
+        </div>
+        <img src="./images/PROFILE PIC FINAL.png" alt="Profile pic" />
+      </main>
+    </div>
+
+    <section id="about_me">
+      <div class="about">
+        <img src="./images/ABOUT ME PIC.png" alt="Imagen about" />
+        <div class="about-info">
+          <h2>About me</h2>
+          <div class="divider"></div>
+          <p>
+            Mature, responsable, strongly oriented to detail, quality and results, these are some of
+            the traits that defines me. I enjoy working as a part of a team with democratic
+            leadership, I consider this as the key to obtain optimal results. I also consider myself
+            really passionate about technology and computer science.
+          </p>
+          <p>
+            In 2008 I started my journey as a computer science enthusiast and I studied 3 years of
+            computer science. Later in my life I became a real estate broker, although this
+            profession has nothing to do with programming, it helped me a lot with my soft skills.
+          </p>
+          <p>
+            Finally, at the beginning of 2022, I redescovered my passion for computer science, I
+            started studying by my own and decided to join a full stack developer bootcamp, this
+            gave me tools that I needed for this new journey as a developer and i'm confident that
+            i'll surpass myself each day by studying and working hard.
+          </p>
+          <a href="https://www.linkedin.com/in/martingalara/" target="_blank"
+            ><button class="read-more">Read more</button></a
+          >
+        </div>
       </div>
-      <ul class="menu" id="menu">
-        <li><a id="home_navbar" class="active" href="#">Home</a></li>
-        <li><a id="about_me_navbar" href="#about_me">About me</a></li>
-        <li><a id="portfolio_navbar" href="#portfolio">Portfolio</a></li>
-        <li><a id="contact_navbar" href="#contact">Contact</a></li>
-      </ul>
-      <div class="toggle-menu">
-        <i class="fas fa-bars" id="toggle_open"></i>
-        <i class="fas fa-close" id="toggle_close"></i>
+    </section>
+
+    <section id="portfolio">
+      <div class="portfolio">
+        <div class="portfolio-headings">
+          <h2>My Portfolio</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container">
+          <div class="card">
+            <div class="card__img1"></div>
+            <div class="card__title">
+              <h2>APP VIDEOGAMES HENRY BOOTCAMP</h2>
+            </div>
+            <div class="card__project-links">
+              <a href="https://github.com/MartinGalara/Proyecto-Videogames" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="proyect-details-content">
+              <button class="project-details download-cv">
+                <a href="" target="_blank"> Project details </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img2"></div>
+            <div class="card__title">
+              <h2>APP GYM FIT FRONTEND</h2>
+            </div>
+            <div class="card__project-links">
+              <a href="https://github.com/aronfraga/gym-frontend-app" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://app-gym-frontend.vercel.app/" target="_blank">
+                <i class="fas fa-globe-americas"></i>
+              </a>
+            </div>
+            <div class="proyect-details-content">
+              <button class="project-details download-cv">
+                <a href="" target="_blank"> Project details </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__img3"></div>
+            <div class="card__title">
+              <h2>APP GYM FIT BACKEND</h2>
+            </div>
+            <div class="card__project-links">
+              <a href="https://github.com/MartinGalara/AppGymBackend" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <div class="proyect-details-content">
+              <button class="project-details download-cv">
+                <a href="" target="_blank"> Project details </a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-  </header>
-  
-  <main class="main">
-    <div class="info-content">
-      <h1>I'm <span>Martín</span> Galará</h1>
-      <h3>Full Stack Developer</h3>
-      <div class="sotial-networks">
-        <a href="https://www.linkedin.com/in/martingalara/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </section>
+
+    <section id="contact">
+      <div class="contact-section">
+        <div class="contact-headings">
+          <h2>Keep in touch</h2>
+          <div class="divider"></div>
+        </div>
+        <div class="container-contact">
+          <div class="contact-form">
+            <h4>Send me a message...</h4>
+            <form class="form" action="https://formsubmit.co/mgalara@gmail.com" method="post">
+              <input type="hidden" name="_subject" vale="New Email!" />
+              <input type="text" name="Name" placeholder="Name" />
+              <input type="email" name="Email" placeholder="Email" required />
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/portfolio.html" />
+              <input type="hidden" name="_captcha" value="false" />
+              <textarea type="text" name="Text " placeholder="Type your message here..."></textarea>
+              <button class="btn-submit" value="Send">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>Martín Galará</h2>
+        <h5>Full Stack Developer</h5>
+      </div>
+      <div class="social-network">
+        <a href="https://www.linkedin.com/in/martingalara/" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
         <a href="https://github.com/MartinGalara" target="_blank"><i class="fab fa-github"></i></a>
       </div>
-      <h4>Tech Skills:</h4>
-      <p>JavaScript | React | Redux | Node.js | Sequelize.js | Express.js | PostgreSQL | SQL | HTML | CSS | SCRUM | Sequelize</p>
-      <h4>Soft Skills:</h4>
-      <p class="bottom_text">Teamwork | Troubleshooting | Fast Learning | Communication Skills | Leadership Skills | Resilience</p>
-      <a href="/files/CV MARTIN GALARA ( English ).pdf" download>
-        <button class="download-cv">Download CV</button>
-      </a>
-    </div>
-    <img src="./images/PROFILE PIC FINAL.png" alt="Profile pic"/>
-  </main>
-</div>
-
-
-<section id="about_me">
-<div class="about">
-  <img src="./images/ABOUT ME PIC.png" alt="Imagen about">
-  <div class="about-info">
-    <h2>About me</h2>
-    <div class="divider"></div>
-    <p>Mature, responsable, strongly oriented to detail, quality and results, these are some of the traits that defines me. I enjoy working as a part of a team with democratic leadership, I consider this as the key to obtain optimal results. I also consider myself really passionate about technology and computer science.</p>
-    <p>In 2008 I started my journey as a computer science enthusiast and I studied 3 years of computer science. Later in my life I became a real estate broker, although this profession has nothing to do with programming, it helped me a lot with my soft skills.</p>
-    <p>Finally, at the beginning of 2022, I redescovered my passion for computer science, I started studying by my own and decided to join a full stack developer bootcamp, this gave me tools that I needed for this new journey as a developer and i'm confident that i'll surpass myself each day by studying and working hard.</p>
-    <a href="https://www.linkedin.com/in/martingalara/" target="_blank"><button class="read-more">Read more</button></a>
-  </div>
-</div>
-</section>
-
-<section id="portfolio">
-<div class="portfolio">
-  <div class="portfolio-headings">
-    <h2>My Portfolio</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="container">
-    <div class="card">
-      <div class="card__img1">
-      </div>
-      <div class="card__title">
-        <h2>APP VIDEOGAMES HENRY BOOTCAMP</h2>
-      </div>
-      <div class="card__project-links">
-        <a href="https://github.com/MartinGalara/Proyecto-Videogames" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <div class="proyect-details-content">
-        <button class="project-details download-cv">
-          <a href="" target="_blank">
-            Project details
-          </a>
-        </button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card__img2">
-      </div>
-      <div class="card__title">
-        <h2>APP GYM FIT FRONTEND</h2>
-      </div>
-      <div class="card__project-links">
-        <a href="https://github.com/aronfraga/gym-frontend-app" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://app-gym-frontend.vercel.app/" target="_blank">
-          <i class="fas fa-globe-americas"></i>
-        </a>
-      </div>
-      <div class="proyect-details-content">
-        <button class="project-details download-cv">
-          <a href="" target="_blank">
-            Project details
-          </a>
-        </button>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="card__img3">
-      </div>
-      <div class="card__title">
-        <h2>APP GYM FIT BACKEND</h2>
-      </div>
-      <div class="card__project-links">
-        <a href="https://github.com/MartinGalara/AppGymBackend" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <div class="proyect-details-content">
-        <button class="project-details download-cv">
-          <a href="" target="_blank">
-            Project details
-          </a>
-        </button>
-      </div>
-    </div>
-
-  </div>
-</div>
-</section>
-
-<section id="contact">
-<div class="contact-section">
-  <div class="contact-headings">
-    <h2>Keep in touch</h2>
-    <div class="divider"></div>
-  </div>
-  <div class="container-contact">
-    <div class="contact-form">
-      <h4>Send me a message...</h4>
-      <form class="form" action="https://formsubmit.co/mgalara@gmail.com" method="post">
-        <input type="hidden" name="_subject" vale="New Email!">
-        <input type="text" name="Name" placeholder="Name">
-        <input type="email" name="Email" placeholder="Email" required>
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/portfolio.html">
-        <input type="hidden" name="_captcha" value="false">
-        <textarea type="text" name="Text "placeholder="Type your message here..."></textarea>
-        <button class="btn-submit" value="Send">
-          Send message
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-</section>
-
-<footer class="footer">
-  <div class="footer-content">
-    <h2>Martín Galará</h2>
-    <h5>Full Stack Developer</h5>
-  </div>
-  <div class="social-network">
-    <a href="https://www.linkedin.com/in/martingalara/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-    <a href="https://github.com/MartinGalara" target="_blank"><i class="fab fa-github"></i></a>
-  </div>
-</footer>
-<script src="/portfolio.js"></script>
-
-</body>
+    </footer>
+    <script src="/portfolio.js"></script>
+  </body>
 </html>
